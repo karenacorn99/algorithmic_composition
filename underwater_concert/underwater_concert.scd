@@ -6,7 +6,6 @@
 ┃╰━╯┃┃┃┃╰╯┃┃━┫┃╰╮╭╮╭┫╭╮┃╰┫┃━┫┃╱┃╰━╯┃╰╯┃┃┃┃╰━┫┃━┫┃┃╰╮
 ╰━━━┻╯╰┻━━┻━━┻╯╱╰╯╰╯╰╯╰┻━┻━━┻╯╱╰━━━┻━━┻╯╰┻━━┻━━┻╯╰━╯
 */
-
 // generated using https://fsymbols.com/generators/carty/
 
 /*
@@ -202,6 +201,7 @@ s.waitForBoot{
 
 		amplitude = Array.fill(num, {0.5 + rrand(-0.05, 0.05)});
 		crescendo = (1..num) / 100;
+		amplitude = amplitude + crescendo;
 
 		[[tonic_chord, dominant_chord, tonic_chord, dominant_chord, Rest(0.5), tonic_chord, dominant_chord, tonic_chord], amplitude]
 	});
@@ -704,7 +704,6 @@ s.waitForBoot{
 		tags: [\rhodes, \piano, \pitched]
 	)
 	).add);
-
 
 	//************** Performance **************//
 	s.sync;
